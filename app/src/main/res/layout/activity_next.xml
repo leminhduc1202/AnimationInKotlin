@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NextActivity">
+    <Button
+        android:id="@+id/bt_previous"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:text="Previous"
+        android:layout_alignParentLeft="true"
+        />
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:text="Next"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_animations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/animations"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bt_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_animations"
+        android:layout_centerHorizontal="true"
+        android:text="Click me" />
+
+    <TextView
+        android:id="@+id/tv_speedNetwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_animation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Show Speed" />
+
+    <Button
+        android:id="@+id/bt_showSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_speedNetwork"
+        android:layout_centerHorizontal="true"
+        android:text="Show speed" />
+</RelativeLayout>
